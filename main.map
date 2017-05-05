@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "client/main.css",
+	"sources": [
+		"client/main.scss",
+		"imports/client/styles/_main.scss",
+		"imports/client/styles/components/_title-bar.scss",
+		"imports/client/styles/components/_wrapper.scss",
+		"imports/client/styles/components/_item.scss",
+		"imports/client/styles/components/_button.scss",
+		"imports/client/styles/components/_player.scss",
+		"imports/client/styles/components/_form.scss"
+	],
+	"sourcesContent": [
+		"@import '../imports/client/styles/main'\n",
+		"//Variables\n$green: #E4EDE0;\n$green-alt: darken($green, 15%);\n$blue: #DFE7ED;\n$blue-alt: darken($blue, 15%);\n$red: #EDDFDF;\n$red-alt: darken($red, 15%);\n\n\n*{\n  margin:0;\n  padding: 0;\n}\nhtml{\n  font-size: 62.5%;\n}\n\nbody{\n  background: #f2f2f2;\n  color:#555555;\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n}\ninput, button, select{\n  font-size: 1.3rem\n}\nh1{\n  font-weight: 300;\n  font-size: 2.4rem;\n}\n\n@import './components/title-bar';\n@import './components/wrapper';\n@import './components/item';\n@import './components/button';\n@import './components/player';\n@import './components/form';\n",
+		".title-bar{\n  background: #e35557;\n  color: white;\n}\n\n.title-bar__subtitle{\n  font-size: 1.3rem;\n  font-weight: 400;\n}\n",
+		".wrapper{\n  margin: 0 auto;\n  max-width: 50rem;\n  padding: 1.3rem;\n}\n",
+		".item{\n  background: white;\n  border: 1px solid #e8e8e8;\n  margin-bottom: 1.3rem;\n  padding:1.3rem;\n}\n.item--position-1{\n  background: $green;\n  border-color: $green-alt;\n}\n\n.item--position-2{\n  background: $blue;\n  border-color: $blue-alt;\n}\n\n.item--position-3{\n  background: $red;\n  border-color: $red-alt;\n}\n\n.item__message{\n  font-size: 1.3rem;\n  font-style: italic;\n  font-weight: 300;\n  text-align: center;\n  color: #999;\n}\n",
+		".button{\n  background: transparent;\n  border: 1px solid #555;\n  color: #555;\n  cursor: pointer;\n  font-weight: 600;\n  line-height: 1;\n  margin-left: 1.3rem;\n  outline: none;\n  padding: 1.3rem;\n  transition: background .2s ease, transform .2s ease;\n\n  &:hover, &:focus{\n    background: #e8E8E8;\n  }\n  &:active{\n    background: #CCC;\n    transform: scale(1.1)\n  }\n}\n\n.button--round{\n  border-radius: 50%;\n  height: 4rem;\n  width: 4rem;\n}\n",
+		".player{\n  align-items: center;\n  display: flex;\n  justify-content:space-between;\n}\n\n.player__name{\n  font-weight: 300;\n  font-size: 1.8rem\n}\n\n.player__stats{\n  font-size: 1.3rem;\n  font-style: italic;\n  font-weight: 300;\n}\n\n.player__actions{\n  flex-shrink: 0;\n\n}\n",
+		".form{\n  display: flex;\n}\n\n.form__input{\n  flex-grow: 1;\n  border: 1px solid #E8E8E8;\n  padding: 0 1.3rem;\n}\n"
+	],
+	"mappings": ";ACSA,AAAA,CAAC,CAAA;EACC,MAAM,EAAC,CAAE;EACT,OAAO,EAAE,CAAE;CACZ;;;AACD,AAAA,IAAI,CAAA;EACF,SAAS,EAAE,KAAM;CAClB;;;AAED,AAAA,IAAI,CAAA;EACF,UAAU,EAAE,OAAQ;EACpB,KAAK,EAAC,OAAQ;EACd,WAAW,EAAE,4BAA6B;EAC1C,SAAS,EAAE,MAAO;CACnB;;;AACD,AAAA,KAAK,EAAE,AAAA,MAAM,EAAE,AAAA,MAAM,CAAA;EACnB,SAAS,EAAE,MACZ;CAAC;;;AACF,AAAA,EAAE,CAAA;EACA,WAAW,EAAE,GAAI;EACjB,SAAS,EAAE,MAAO;CACnB;;;AC7BD,AAAA,UAAU,CAAA;EACR,UAAU,EAAE,OAAQ;EACpB,KAAK,EAAE,KAAM;CACd;;;AAED,AAAA,oBAAoB,CAAA;EAClB,SAAS,EAAE,MAAO;EAClB,WAAW,EAAE,GAAI;CAClB;;;ACRD,AAAA,QAAQ,CAAA;EACN,MAAM,EAAE,MAAO;EACf,SAAS,EAAE,KAAM;EACjB,OAAO,EAAE,MAAO;CACjB;;;ACJD,AAAA,KAAK,CAAA;EACH,UAAU,EAAE,KAAM;EAClB,MAAM,EAAE,iBAAkB;EAC1B,aAAa,EAAE,MAAO;EACtB,OAAO,EAAC,MAAO;CAChB;;;AACD,AAAA,iBAAiB,CAAA;EACf,UAAU,EHNJ,OAAO;EGOb,YAAY,EHNF,OAAM;CGOjB;;;AAED,AAAA,iBAAiB,CAAA;EACf,UAAU,EHTL,OAAO;EGUZ,YAAY,EHTH,OAAM;CGUhB;;;AAED,AAAA,iBAAiB,CAAA;EACf,UAAU,EHZN,OAAO;EGaX,YAAY,EHZJ,OAAM;CGaf;;;AAED,AAAA,cAAc,CAAA;EACZ,SAAS,EAAE,MAAO;EAClB,UAAU,EAAE,MAAO;EACnB,WAAW,EAAE,GAAI;EACjB,UAAU,EAAE,MAAO;EACnB,KAAK,EAAE,IAAK;CACb;;;AC3BD,AAAA,OAAO,CAAA;EACL,UAAU,EAAE,WAAY;EACxB,MAAM,EAAE,cAAe;EACvB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,OAAQ;EAChB,WAAW,EAAE,GAAI;EACjB,WAAW,EAAE,CAAE;EACf,WAAW,EAAE,MAAO;EACpB,OAAO,EAAE,IAAK;EACd,OAAO,EAAE,MAAO;EAChB,UAAU,EAAE,uCAAwC;CASrD;;;AAnBD,AAAA,OAAO,AAYJ,MAAM,EAZT,AAAA,OAAO,AAYK,MAAM,CAAA;EACd,UAAU,EAAE,OAAQ;CACrB;;;AAdH,AAAA,OAAO,AAeJ,OAAO,CAAA;EACN,UAAU,EAAE,IAAK;EACjB,SAAS,EAAE,UAAK;CACjB;;;AAGH,AAAA,cAAc,CAAA;EACZ,aAAa,EAAE,GAAI;EACnB,MAAM,EAAE,IAAK;EACb,KAAK,EAAE,IAAK;CACb;;;ACzBD,AAAA,OAAO,CAAA;EACL,WAAW,EAAE,MAAO;EACpB,OAAO,EAAE,IAAK;EACd,eAAe,EAAC,aAAc;CAC/B;;;AAED,AAAA,aAAa,CAAA;EACX,WAAW,EAAE,GAAI;EACjB,SAAS,EAAE,MACZ;CAAC;;;AAEF,AAAA,cAAc,CAAA;EACZ,SAAS,EAAE,MAAO;EAClB,UAAU,EAAE,MAAO;EACnB,WAAW,EAAE,GAAI;CAClB;;;AAED,AAAA,gBAAgB,CAAA;EACd,WAAW,EAAE,CAAE;CAEhB;;;ACpBD,AAAA,KAAK,CAAA;EACH,OAAO,EAAE,IAAK;CACf;;;AAED,AAAA,YAAY,CAAA;EACV,SAAS,EAAE,CAAE;EACb,MAAM,EAAE,iBAAkB;EAC1B,OAAO,EAAE,QAAS;CACnB",
+	"names": []
+}
